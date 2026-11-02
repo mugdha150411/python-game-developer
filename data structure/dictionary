@@ -1,0 +1,22 @@
+d={"english":45,"maths":48,"physics":40,"chemistry":46,"maths":50}
+print(d)
+#get heys
+print(d.keys())
+#get values
+print(d.values())
+#get items
+print(d.items())
+#retreive values using a key
+print(d["physics"])
+#retreive all the items
+for i in d:
+    print(i,d[i])
+#add another item
+d["cs"]=38
+print(d)
+#updating an item
+d["cs"]=42
+print(d)
+#deleting an item
+del d["maths"]
+print(d)

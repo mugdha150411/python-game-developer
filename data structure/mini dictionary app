@@ -1,0 +1,27 @@
+print("-----mini dictiaonary app-----")
+d={}
+while True:
+    print("1.add/update a word")
+    print("2.retrieve a word's definition")
+    print("3.delete a word")
+    print("4.view all words")
+    print("5.exit")
+    choice=int(input("choose a no. from 1-5: "))
+    if choice==1:
+        word=input("enter a word: ")
+        definition=input("enter the meaning of the word: ")
+        d[word]=definition
+    elif choice==2:
+        w=input("enter the word: ")
+        if w in d:
+            print(f"the difinition of {w} is {d[w]}")
+        else:
+            print(f"{w} is not in teh dictionary")
+    elif choice==3:
+        pass
+    elif choice==4:
+        print("the words in your dictionary are: ")
+        for i in d:
+            print(i,":",d[i])
+    elif choice==5:
+        break

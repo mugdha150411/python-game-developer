@@ -6,7 +6,7 @@ def draw():
     screen.fill("black")
     side=50
 
-    for i in range(10):
+    for i in range(15):
         r=random.randint(0,255)
         g=random.randint(0,255)
         b=random.randint(0,255)
